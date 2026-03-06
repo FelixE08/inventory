@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ItemController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\RandomController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -9,18 +12,23 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', function() {
-    return "Hallo, Welt!";
-});
+Route::get('/', [PageController::class, 'index']);
 
-Route::get('/about', function() {
-    return "<html><title>About</title><body><h1>About me</h1></body></html>";
-});
+Route::get('/index', [PageController::class, 'index'])->name('index');
 
-Route::get('/me', function() {
-    return view('test');
-});
+Route::get('/about', [PageController::class, 'about']);
 
-Route::get('/impressum',function() {
-    return view('impressum');
-});
+Route::get('/me', [PageController::class, 'me']);
+
+Route::get('/impressum', [PageController::class, 'impressum']);
+
+Route::get('/contact', [PageController::class, 'contact'])
+    ->name('pages.contact');
+
+// /info/1
+Route::get('/info/{id}', [PageController::class, 'info']);
+
+Route::get('/items', [ItemController::class, 'index']);
+
+Route::get('/random-student', [RandomController::class, 'select']);
+

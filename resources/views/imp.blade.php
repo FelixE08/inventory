@@ -19,23 +19,78 @@
         </style>
     @endif
 </head>
-<body class="bg-gray-50 dark:bg-gray-500 p-6">
-<h1 class="text-sm md:text-xl lg:text-3xl text-gray-500 dark:text-gray-100 md:text-amber-300 dark:md:text-gray-300">Impressum</h1>
-<div class="space-y-3 mt-6">
-<p class="text-xl mt-3 sm:mt-6 md:mt-9">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+<body class="bg-gray-100 p-3">
+<h1 class="text-xl md:text-2xl lg:text-4xl">{{$vorname}} {{$nachname}}</h1>
+<p>Alter: {{$age}}</p>
 
-<p class="bg-pink-400 p-3 rounded-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-<p class="bg-pink-400 p-3 rounded-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+{{-- 
+Achtung: Die Variable wird direkt ausgegeben. Falls eine Variable vom Benutzer stammt, uss der Inhalt überprüft werden bzw. darf der Inhalt niemals direkt ausgegeben werden.
+<p>Information: {{!! $info !!}}</p>
+--}}
+<p>Information: {{$info}}</p>
 
-<p class="bg-pink-400 p-3 rounded-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+id, title, invnumber, category, ts, room, school, comment, tags
 
-<p class="bg-pink-400 p-3 rounded-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-</div>
+items:
+id
+ts
+invnumber
+room_id
+school_id
+title
+comment
+category_id
 
-<div class="flex flex-row mt-6">
-    <div class="bg-red-600 flex-2 rounded-l-lg p-3">Eins</div>
-    <div class="bg-amber-500 flex-1 rounded-r-lg p-3">Zwei</div>
-</div>
+rooms:
+id
+title
+school_id
+
+schools:
+id
+title
+address
+
+categories:
+id
+title
+school_id
+
+tags: 
+id
+title
+school_id
+
+items_tags:
+id
+item_id
+tag_id
+ts
+
+user:
+id
+name
+email
+password
+
+groups:
+id
+name
+
+users_groups:
+id
+user_id
+group_id
+
+personal_access_tokens:
+id
+abilities
+name
+
+
+1 item ... 1 category
+n item ... 1 category
+1:n
 
 </body>
 </html>

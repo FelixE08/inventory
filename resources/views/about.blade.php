@@ -19,23 +19,44 @@
         </style>
     @endif
 </head>
-<body class="bg-gray-50 dark:bg-gray-500 p-6">
-<h1 class="text-sm md:text-xl lg:text-3xl text-gray-500 dark:text-gray-100 md:text-amber-300 dark:md:text-gray-300">Impressum</h1>
-<div class="space-y-3 mt-6">
-<p class="text-xl mt-3 sm:mt-6 md:mt-9">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+<body class="bg-cyan-50">
 
-<p class="bg-pink-400 p-3 rounded-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-<p class="bg-pink-400 p-3 rounded-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+    <h1 class="text-xl md:text-2xl lg:text-5xl mt-6 ml-6 font-mono underline">
+        About
+    </h1>
 
-<p class="bg-pink-400 p-3 rounded-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+<div class="flex flex-col lg:flex-row items-stretch gap-6 mt-8 px-6">
 
-<p class="bg-pink-400 p-3 rounded-lg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+    <div class="w-full lg:w-1/2">
+        <img src="inventoryprogram.png"
+             alt="Inventory Program Logo"
+             class="w-full h-full rounded-3xl object-cover shadow-lg">
+    </div>
+
+    <div class="w-full lg:w-1/2 bg-gray-700 text-white rounded-3xl p-6 flex items-center">
+        <p class="text-sm md:text-lg lg:text-xl font-bold leading-relaxed">
+            Das Schul-Inventarprogramm ist eine digitale Anwendung zur Verwaltung aller Gegenstände und Materialien einer Schule.
+            Mit dem Programm können Lehrer, Verwaltung und Technikpersonal den Bestand von Geräten, Büchern, Möbeln und Schulmaterialien übersichtlich erfassen und verwalten.
+            <br><br>
+            Das System zeigt eine Liste aller Inventargegenstände mit wichtigen Informationen wie Name, Kategorie, Menge, Status
+            (z. B. verfügbar, ausgeliehen, in Reparatur) und Standort (z. B. Bibliothek, Klassenraum, Labor).
+            Über eine Suchfunktion und Filter können bestimmte Gegenstände schnell gefunden werden.
+        </p>
+    </div>
 </div>
 
-<div class="flex flex-row mt-6">
-    <div class="bg-red-600 flex-2 rounded-l-lg p-3">Eins</div>
-    <div class="bg-amber-500 flex-1 rounded-r-lg p-3">Zwei</div>
-</div>
+
+    <div class="bg-gray-700 text-white rounded-2xl m-6 p-8">
+        <p class="text-sm md:text-lg lg:text-xl font-bold leading-relaxed">
+            Zusätzlich bietet das Programm Funktionen zum Ausleihen und Zurückgeben von Materialien,
+            zur Verwaltung von Kategorien und Lieferanten sowie zur Anzeige von Statistiken,
+            zum Beispiel über niedrige Bestände oder ausgeliehene Gegenstände.
+            Warnmeldungen informieren, wenn Materialien knapp werden.
+            <br><br>
+            Das Schul-Inventarprogramm hilft dabei, Ordnung zu schaffen, Verluste zu vermeiden
+            und die Organisation der Schule effizienter zu gestalten.
+        </p>
+    </div>
 
 </body>
 </html>
